@@ -1,7 +1,7 @@
 {
   "name": "ctrlv-image-paste",
-  "version": "1.0.0",
-  "description": "Makes Ctrl+V paste images (and text) in Claude Code on Windows Terminal, without AutoHotkey or other third-party tools.",
+  "version": "1.0.1",
+  "description": "Makes Ctrl+V paste images (and text) in Claude Code on Windows Terminal.",
   "author": {
     "name": "Gustavo Liu",
     "url": "https://github.com/GuxtavoLiu"

@@ -27,6 +27,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File "${CLAUDE_SKILL_DIR}/scripts
    - If the status already shows both "Ctrl+V passed through to the app" and "Ctrl+V -> chat:imagePaste", tell the user it is already set up and stop.
    - Before changing anything, explain to the user, in their language:
      - Windows Terminal will stop handling Ctrl+V itself, so the key reaches Claude Code. In Claude Code, Ctrl+V pastes an image, or the clipboard text when there is no image.
+     - Pasting text with Ctrl+V takes about half a second, because Claude Code checks for an image first. Ctrl+Shift+V pastes text instantly.
      - This affects every tab in Windows Terminal. PowerShell keeps pasting with Ctrl+V (PSReadLine handles it). In cmd, Git Bash, WSL and ssh sessions, paste with Ctrl+Shift+V or right-click instead.
      - Both files are backed up first, and `/ctrlv-image-paste:setup revert` undoes it.
    - Ask for confirmation. Once confirmed, run the script with no flag.
